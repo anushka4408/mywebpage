@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup_page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Madurai:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            background-color: #6b5b95;
+                    
+        }
+        #content {
+            background-color: #feb236;
+            position: relative;
+            border-radius: 2em;
+            border-color: black;
+            
+            margin: 200px 500px;
+            width: 470px;
+            height: 610px;
+            padding: 10px 10px;
+        }
+
+        #content-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .form-group {
+            padding: 10px 10px;
+        }
+
+        .form-group label {
+            padding: 10px 10px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .form-group input {
+            padding: 3px 40px;
+            width: 330px;
+            font-family: 'Hind Madurai', sans-serif;
+            border-radius: 2em;
+            height: 30px;
+        }
+        #year{
+            padding: 7px 20px;
+        }
+        #branch{
+            padding: 7px 20px;
+        }
+        /* .form-group a {
+            text-decoration: none;
+            color: black;
+            margin: 115px; */
+        /* } */
+        .form-group a{
+            /* background-color: rgb(217, 205, 205); */
+            
+            border-radius: 12px;
+            padding: 5px 10px;
+            text-decoration: underline;    
+        }
+
+        .btn {
+            border-radius: 10px;
+            padding: 10px 40px;
+            margin: 1px 130px;
+            width: 160px;
+            font-size: 20px;
+            font-family: 'Hind Madurai', sans-serif;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="content">
+        <div id="content-box">
+
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Username:</label>
+                    <input type="text" name="Username" id="Username" placeholder="Enter your Username" required>
+                </div>
+                <div class="form-group">
+
+                    <label for="">E-mail:</label>
+                    <input type="email" name="E-mail" id="E-mail" placeholder="Enter your E-mail" required>
+                </div>
+                <div class="form-group">
+
+                    <label for="">Password:</label>
+                    <input type="password" name="Password" id="Password" placeholder="Enter your Password" required>
+                </div>
+                <div class="form-group">
+
+                    <label for="">Confirm Password:</label>
+                    <input type="password" name="Confirm Password" id="Confirm Password"
+                        placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Current Year:</label>
+                    <select name="year" id="year">
+                        <option value="firstyear">First Year</option>
+                        <option value="secondyear">Secoond Year</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="year">Branch:</label>
+                    <select name="branch" id="branch">
+                        <option value="Computer Engineering">Computer Engineering</option>
+                        <option value="Information Technology">Information Technology</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn">submit</button>
+                </div>
+                <div class="form-group">
+                    <a href="login.html" target="_blank"><b>I already have an account</b></a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
